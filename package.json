@@ -23,5 +23,6 @@
     "istextorbinary": "^4.3.0",
     "markdown-to-pug": "^1.0.11",
     "path": "^0.12.7"
-  }
+  }, 
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
