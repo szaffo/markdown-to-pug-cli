@@ -32,7 +32,7 @@ script hljs.initHighlightingOnLoad()
 ```
 > You can switch theme by chanhing the css file name. Try themes [here](https://highlightjs.org/static/demo/)  
 
-**Dependencies**
+## Dependencies
 
 - [markdown-to-pug](https://www.npmjs.com/package/markdown-to-pug)
 - [markdown-it-highlightjs](https://www.npmjs.com/package/markdown-it-highlightjs)
@@ -80,3 +80,7 @@ extend layout.pug
 block content
   h1 Title
 ```
+
+## Contribution
+
+Check out the [GitHub repo](https://github.com/szaffo/markdown-to-pug-cli) or email me at `szaffo@szabomartin.com`
