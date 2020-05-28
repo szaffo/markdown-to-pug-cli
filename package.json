@@ -4,12 +4,12 @@
   "description": "CLI Tool for converting Markdown to Pug",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "md2pug": "src/index.js"
+    "md2pug": "src/default.js",
+    "md2pugHl": "src/highlight.js"
   },
   "bin": {
-    "md2pug": "src/index.js"
+    "md2pug": "src/default.js",
+    "md2pugHl": "src/highlight.js"
   },
   "keywords": [
     "pug",
@@ -21,6 +21,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "istextorbinary": "^4.3.0",
+    "markdown-it-highlightjs": "^3.1.0",
     "markdown-to-pug": "^1.0.11",
     "path": "^0.12.7"
   }
