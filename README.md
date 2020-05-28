@@ -23,12 +23,12 @@ If you want syntax highlight, you can convert with `md2pugHl` and use [highlight
 For highlight.js visit their [site](https://highlightjs.org/), or just copy this
 
 ```pug
-  //- highlight.js css
-  link(rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/gml.min.css")
-  //- highlight.js code
-  script(src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/highlight.min.js")
-  //- highlight.js trigger
-  script hljs.initHighlightingOnLoad()
+//- highlight.js css
+link(rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/gml.min.css")
+//- highlight.js code
+script(src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/highlight.min.js")
+//- highlight.js trigger
+script hljs.initHighlightingOnLoad()
 ```
 > You can switch theme by chanhing the css file name. Try themes [here](https://highlightjs.org/static/demo/)  
 
