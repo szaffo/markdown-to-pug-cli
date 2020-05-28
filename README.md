@@ -34,10 +34,11 @@ script hljs.initHighlightingOnLoad()
 
 ## Dependencies
 
-- [markdown-to-pug](https://www.npmjs.com/package/markdown-to-pug)
-- [markdown-it-highlightjs](https://www.npmjs.com/package/markdown-it-highlightjs)
-- [markdown-it](https://www.npmjs.com/package/markdown-it)
 - [istextorbinary](https://www.npmjs.com/package/istextorbinary)
+- [markdown-it](https://www.npmjs.com/package/markdown-it)
+- [markdown-to-pug](https://www.npmjs.com/package/markdown-to-pug)
+- [markdown-it-anchor](https://www.npmjs.com/package/markdown-it-anchor)
+- [markdown-it-highlightjs](https://www.npmjs.com/package/markdown-it-highlightjs)
 
 ## Example
 
