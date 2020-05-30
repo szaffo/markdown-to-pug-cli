@@ -19,8 +19,10 @@
   "author": "Szabó Martin",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.0.0",
     "fs": "0.0.1-security",
     "istextorbinary": "^4.3.0",
+    "log-symbols": "^4.0.0",
     "markdown-it-anchor": "^5.3.0",
     "markdown-it-highlightjs": "^3.1.0",
     "markdown-to-pug": "^1.0.11",

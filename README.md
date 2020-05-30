@@ -39,6 +39,8 @@ script hljs.initHighlightingOnLoad()
 - [markdown-to-pug](https://www.npmjs.com/package/markdown-to-pug)
 - [markdown-it-anchor](https://www.npmjs.com/package/markdown-it-anchor)
 - [markdown-it-highlightjs](https://www.npmjs.com/package/markdown-it-highlightjs)
+- [log-symbols](https://www.npmjs.com/package/log-symbols)
+- [chalk](https://www.npmjs.com/package/chalk)
 
 ## Example
 

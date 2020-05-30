@@ -1,0 +1,85 @@
+h1(id="markdown-to-pug-cli") Markdown to Pug CLI
+p Convert your markdown code to pug easily from the command line.
+h2(id="install") Install
+pre.hljs.language-shell
+  code. 
+    npm i -g markdown-to-pug-cli
+    
+h2(id="usage") Usage
+p Run this simple command, and it will create a pug file with the same name, but 
+  <code>.pug</code>  ending.
+pre.hljs.language-bash
+  code. 
+    md2pug README.md
+    
+p If you want syntax highlight, you can convert with 
+  <code>md2pugHl</code>  and use 
+  a(href="https://highlightjs.org/") highlight.js .
+blockquote
+  p Note that, you have to import highlight.js manualy by yourself in your pug code
+p For highlight.js visit their 
+  a(href="https://highlightjs.org/") site , or just copy this
+pre.hljs.language-pug
+  code. 
+    //- highlight.js css
+    link(rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/gml.min.css")
+    //- highlight.js code
+    script(src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/highlight.min.js")
+    //- highlight.js trigger
+    script hljs.initHighlightingOnLoad()
+    
+blockquote
+  p You can switch theme by chanhing the css file name. Try themes 
+    a(href="https://highlightjs.org/static/demo/") here
+h2(id="dependencies") Dependencies
+ul
+  li
+    a(href="https://www.npmjs.com/package/istextorbinary") istextorbinary
+  li
+    a(href="https://www.npmjs.com/package/markdown-it") markdown-it
+  li
+    a(href="https://www.npmjs.com/package/markdown-to-pug") markdown-to-pug
+  li
+    a(href="https://www.npmjs.com/package/markdown-it-anchor") markdown-it-anchor
+  li
+    a(href="https://www.npmjs.com/package/markdown-it-highlightjs") markdown-it-highlightjs
+h2(id="example") Example
+pre.hljs.language-bash
+  code. 
+    md2pug mySite.md
+    
+p Creates mySite.pug
+h3(id="mixin-support") Mixin support
+p With the folliwing PugJS mixin
+pre.hljs.language-pugjs
+  code. 
+    mixin list
+      ul
+        li first
+        li second
+        li third    
+    
+pre.hljs.language-md
+  code. 
+    <!-- +list -->
+    
+h3(id="layout-support") Layout support
+pre.hljs.language-md
+  code. 
+    <!-- extends layout.pug -->
+    
+    <!-- block content -->
+    # Title
+    
+p will yield to
+pre.hljs.language-pugjs
+  code. 
+    extend layout.pug
+    
+    block content
+      h1 Title
+    
+h2(id="contribution") Contribution
+p Check out the 
+  a(href="https://github.com/szaffo/markdown-to-pug-cli") GitHub repo  or email me at 
+  <code>szaffo@szabomartin.com</code>

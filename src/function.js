@@ -1,6 +1,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk');
+const logSymbols = require('log-symbols');
 const { isBinary } = require('istextorbinary')
 const cwd = process.cwd();
 const fileName = process.argv[2];
@@ -11,7 +13,7 @@ function convert(converter) {
 
     // STEP 1 Get the filename from argv
     if (fileName === undefined) {
-        console.error("No filename found. Aborted.");
+        console.error(chalk.bgBlack.yellow("No filename found. Aborted."));
         process.exit(1);
     }
 
@@ -19,7 +21,7 @@ function convert(converter) {
 
     // STEP 2 Check if the given file is text or binary
     if (isBinary(filePath)) {
-        console.log("File is not a text file. Aborted.");
+        console.log(chalk.bgBlack.yellow("File is not a text file. Aborted."));
         process.exit(2);
     }
 
@@ -27,7 +29,7 @@ function convert(converter) {
     try {
         var content = fs.readFileSync(filePath, 'utf8');
     } catch (error) {
-        console.log("No such file: " + filePath);
+        console.log(chalk.bgBlack.yellow("No such file: " + filePath));
         process.exit(3);
     }
 
@@ -41,9 +43,9 @@ function convert(converter) {
     pugFileName = pugFileName.join(".");
     try {
         fs.writeFileSync(pugFileName, pug);
-        console.log(`${fileName} --> ${pugFileName} (DONE)`);
+        console.log(chalk.blue(`${fileName} --> ${pugFileName}`) + chalk.green(`\t${logSymbols.success} DONE`));
     } catch (error) {
-        console.log(error.message);
+        console.log(chalk.bgBlack.yellow(error.message));
         process.exit(4);
     }
 }
