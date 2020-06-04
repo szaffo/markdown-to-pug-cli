@@ -1,7 +1,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const chalk = require('chalk');
+
 const logSymbols = require('log-symbols');
 const { isBinary } = require('istextorbinary')
 const cwd = process.cwd();
@@ -9,7 +9,6 @@ const fileName = process.argv[2];
 const usageText = "Usage: md2pug <filepath>";
 
 function convert(converter) {
-
 
     // STEP 1 Get the filename from argv
     if (fileName === undefined) {
