@@ -19,7 +19,10 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "commander": "^5.1.0",
+    "file-extension": "^4.0.5",
     "fs": "0.0.1-security",
+    "get-all-files": "^3.0.0",
+    "is-directory": "^0.3.1",
     "is-file": "^1.0.0",
     "is-relative": "^1.0.0",
     "istextorbinary": "^4.3.0",
@@ -27,6 +30,7 @@
     "markdown-it-anchor": "^5.3.0",
     "markdown-it-highlightjs": "^3.1.0",
     "markdown-to-pug": "^1.0.11",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "replace-ext": "^2.0.0"
   }
 }
